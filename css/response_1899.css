@@ -1,0 +1,227 @@
+@media print, (max-width: 1899px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 55px;
+    }
+
+
+    .cont
+    {
+        padding: 0 60px;
+    }
+
+
+    .swiper-pagination-bullet + .swiper-pagination-bullet
+    {
+        margin-left: 20px !important;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .menu .category_name
+    {
+        line-height: 100%;
+    }
+
+
+    header .menu .models .title
+    {
+        margin-bottom: 24px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .page_head .cont
+    {
+        min-height: 280px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+
+
+
+    /*-------------
+        Persons
+    -------------*/
+    .persons .row
+    {
+        margin-bottom: -40px;
+        margin-left: -24px;
+    }
+
+    .persons .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 40px;
+        margin-left: 24px;
+    }
+
+
+    .persons .person .photo
+    {
+        margin-bottom: 24px;
+    }
+
+    .persons .person .post
+    {
+        line-height: 23px;
+
+        margin-top: 16px;
+    }
+
+
+
+    /*---------------
+        Cart info
+    ---------------*/
+    .cart_info
+    {
+        width: 460px;
+        padding: 24px 40px 24px 28px;
+    }
+
+
+    .cart_info .scroll
+    {
+        width: calc(100% + 20px);
+        margin-right: -20px;
+        padding-right: 20px;
+    }
+
+
+    .cart_info .product .info
+    {
+        width: calc(100% - 171px);
+    }
+
+
+
+    /*---------------
+        Auth info
+    ---------------*/
+    .auth_info
+    {
+        width: 460px;
+        padding: 24px 40px 24px 28px;
+    }
+
+
+    .auth_info .scroll
+    {
+        width: calc(100% + 20px);
+        margin-right: -20px;
+        padding-right: 20px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .images
+    {
+        width: calc(50% + 40px);
+        margin-left: -60px;
+    }
+
+
+
+    /*----------------------
+        Related products
+    ----------------------*/
+    .related_products .row
+    {
+        margin-bottom: -40px;
+        margin-left: -40px;
+    }
+
+    .related_products .row > *
+    {
+        width: calc(33.333% - 40px);
+        margin-bottom: 40px;
+        margin-left: 40px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .logo
+    {
+        margin-bottom: 60px;
+    }
+
+
+
+    footer .subscribe
+    {
+        width: calc(100% + 60px);
+        margin-right: -60px;
+        padding: 48px;
+    }
+
+    footer .subscribe .title
+    {
+        font-size: 28px;
+        line-height: 36px;
+
+        margin-bottom: 48px;
+    }
+
+
+    footer .subscribe .input
+    {
+        width: calc(100% - 324px);
+    }
+
+    footer .subscribe .submit_btn
+    {
+        width: 300px;
+    }
+
+
+    footer .copyright
+    {
+        margin-top: 60px;
+        padding-top: 40px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+}

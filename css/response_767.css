@@ -1,0 +1,638 @@
+@media print, (max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 36px;
+    }
+
+
+    .cont
+    {
+        padding: 0 20px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 20px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head .title
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        letter-spacing: .1em;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        height: calc(100% - 68px);
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header
+    {
+        padding: 8px 0;
+    }
+
+
+    .mob_header .btns > * + *
+    {
+        margin-left: 4px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        padding: 28px 0;
+    }
+
+
+    .page_head .cont
+    {
+        min-height: 100px;
+    }
+
+
+    .page_title:before
+    {
+        top: -4px;
+
+        width: 114px;
+        height: 3px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 28px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    form .submit_btn
+    {
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .cont
+    {
+        height: 540px;
+        min-height: 540px;
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+
+
+    .main_slider .logo
+    {
+        margin-bottom: 24px;
+    }
+
+    .main_slider .logo img
+    {
+        width: 136px;
+    }
+
+    .main_slider .logo span
+    {
+        width: calc(50% - 108px);
+    }
+
+
+    .main_slider .title
+    {
+        font-size: 47px;
+        line-height: 57px;
+    }
+
+
+    .main_slider .link
+    {
+        margin-top: 32px;
+    }
+
+    .main_slider .link a
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        width: 220px;
+
+        letter-spacing: .1em;
+    }
+
+
+
+    /*----------------
+        Categories
+    ----------------*/
+    .categories .row > *
+    {
+        width: 100%;
+    }
+
+
+
+    /*---------------
+        Community
+    ---------------*/
+    .community
+    {
+        margin-bottom: 60px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+
+    .community .image
+    {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+
+    .community .data
+    {
+        width: 100%;
+    }
+
+
+
+    /*-------------
+        Persons
+    -------------*/
+    .persons .row > *
+    {
+        width: calc(50% - 16px);
+    }
+
+
+
+    /*---------------
+        Auth info
+    ---------------*/
+    .auth_info
+    {
+        height: calc(100% - 68px);
+    }
+
+
+
+    /*---------------
+        Cart info
+    ---------------*/
+    .cart_info
+    {
+        height: calc(100% - 68px);
+    }
+
+    .cart_info.mob_hide
+    {
+        transform: translateX(100%);
+    }
+
+
+
+    /*-------------------
+        Checkout info
+    -------------------*/
+    .checkout_info
+    {
+        padding-top: 32px;
+    }
+
+
+    .checkout_info .data
+    {
+        width: 100%;
+    }
+
+
+
+    /*-------------------
+        Products head
+    -------------------*/
+    .products_head .filter
+    {
+        width: 100%;
+    }
+
+
+    .products_head .filter .btn
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        padding: 12px 20px 11px;
+
+        letter-spacing: .1em;
+    }
+
+
+    .products_head .filter .mini_modal
+    {
+        width: calc(100vw - 40px);
+    }
+
+
+    .products_head .filter .section .name
+    {
+        font-weight: 700;
+
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+
+    .products_head .filter .section .vals
+    {
+        width: 100%;
+    }
+
+
+    .products_head .filter .category .vals
+    {
+        column-gap: 32px;
+    }
+
+
+    .products_head .filter .price .row
+    {
+        margin-left: -24px;
+    }
+
+    .products_head .filter .price .row > *
+    {
+        width: 160px;
+        margin-left: 24px;
+        padding-left: 32px;
+    }
+
+    .products_head .filter .price .prefix
+    {
+        font-size: 14px;
+
+        left: 0;
+    }
+
+
+    .products_head .filter .form .submit_btn
+    {
+        width: 220px;
+    }
+
+
+    .products_head .sort
+    {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .row
+    {
+        margin-bottom: -8px;
+        margin-left: -8px;
+    }
+
+    .products .row > *
+    {
+        width: calc(50% - 8px);
+        margin-bottom: 8px;
+        margin-left: 8px;
+    }
+
+
+    .products .product .favorite_btn
+    {
+        top: 16px;
+        right: 8px;
+
+        width: 28px;
+        height: 28px;
+    }
+
+    .products .product .favorite_btn .icon
+    {
+        width: 22px;
+        height: 22px;
+    }
+
+
+    .products .product .stickers
+    {
+        font-size: 20px;
+
+        top: 20px;
+    }
+
+    .products .product .stickers .sticker
+    {
+        width: 64px;
+        padding-right: 6px;
+    }
+
+
+    .products .product .info
+    {
+        padding: 20px 52px 20px 20px;
+    }
+
+
+    .products .product .category
+    {
+        font-size: 15px;
+        line-height: 19px;
+
+        margin-bottom: 6px;
+    }
+
+
+    .products .product .name
+    {
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+
+    .products .product .price
+    {
+        font-size: 24px;
+        line-height: 26px;
+
+        margin-top: 6px;
+    }
+
+
+    .products .product .colors
+    {
+        padding: 16px 12px;
+    }
+
+    .products .product .colors .btn
+    {
+        width: 14px;
+        height: 14px;
+    }
+
+
+    .products .product .buy_btn
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        padding: 12px;
+    }
+
+
+    .products .product:after,
+    .products .product:hover:after
+    {
+        transform: rotate(180deg) translateY(44px);
+    }
+
+    .products .product .info,
+    .products .product:hover .info
+    {
+        transform: translateY(-44px);
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .images .stickers
+    {
+        font-size: 20px;
+
+        top: 20px;
+    }
+
+    .product_info .images .stickers .sticker
+    {
+        width: 64px;
+        padding-right: 6px;
+    }
+
+
+    .product_info .product_data > .category
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .product_info .product_data > .product_name
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .product_info .product_data > .price
+    {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+
+    .product_info .product_data > .features .size label
+    {
+        font-size: 15px;
+        line-height: 40px;
+
+        width: 44px;
+        height: 44px;
+    }
+
+
+    .product_info .product_data > .buy_btn
+    {
+        font-size: 20px;
+        line-height: 24px;
+
+        margin-top: 28px;
+
+        letter-spacing: .1em;
+    }
+
+
+
+    /*----------------------
+        Related products
+    ----------------------*/
+    .related_products .row
+    {
+        margin-left: -16px;
+    }
+
+    .related_products .row > *
+    {
+        width: calc(33.333% - 16px);
+        margin-left: 16px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .logo:before
+    {
+        left: 220px;
+
+        height: 4px;
+    }
+
+    footer .logo img
+    {
+        height: 80px;
+    }
+
+
+
+    footer .subscribe
+    {
+        padding: 24px 24px 24px 28px;
+    }
+
+    footer .subscribe .title
+    {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    footer .subscribe .input
+    {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    footer .subscribe .submit_btn
+    {
+        width: 100%;
+    }
+
+
+    footer .copyright
+    {
+        margin-top: 28px;
+        padding-top: 20px;
+    }
+
+    footer .copyright:before
+    {
+        height: 4px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    #gift_modal .data
+    {
+        width: 100%;
+    }
+
+
+    #gift_modal .title
+    {
+        font-size: 24px;
+        line-height: 30px;
+
+        letter-spacing: .1em;
+    }
+
+
+    #gift_modal .image
+    {
+        display: none;
+    }
+
+
+
+    #community_modal .data
+    {
+        width: 100%;
+    }
+
+
+    #community_modal .number
+    {
+        font-size: 24px;
+        line-height: 30px;
+
+        margin-bottom: 8px;
+    }
+
+
+    #community_modal .title
+    {
+        font-size: 24px;
+        line-height: 30px;
+
+        letter-spacing: .1em;
+    }
+
+
+    #community_modal .image
+    {
+        display: none;
+    }
+}
