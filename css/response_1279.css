@@ -659,14 +659,26 @@
     /*------------------
         Product info
     ------------------*/
-    .product_info .product_data
+    .product_data
     {
         width: calc(50% - 4px);
-        margin-top: 28px;
     }
 
 
-    .product_info .product_data > .category
+    .product_data .scroll
+    {
+        padding-top: 28px;
+    }
+
+
+    .product_data .scroll > .favorite_btn
+    {
+        top: 28px;
+        right: 8px;
+    }
+
+
+    .product_data .scroll > .category
     {
         font-size: 16px;
         line-height: 20px;
@@ -675,14 +687,14 @@
     }
 
 
-    .product_info .product_data > .product_name
+    .product_data .scroll > .product_name
     {
         font-size: 26px;
         line-height: 30px;
     }
 
 
-    .product_info .product_data > .price
+    .product_data .scroll > .price
     {
         font-size: 28px;
         line-height: 34px;
@@ -691,19 +703,19 @@
     }
 
 
-    .product_info .product_data > .features
+    .product_data .scroll > .features
     {
         font-size: 16px;
         line-height: 20px;
     }
 
-    .product_info .product_data > .features > * + *
+    .product_data .scroll > .features > * + *
     {
         margin-top: 12px;
     }
 
 
-    .product_info .product_data > .features .size label
+    .product_data .scroll > .features .size label
     {
         font-size: 16px;
         line-height: 48px;
@@ -713,7 +725,7 @@
     }
 
 
-    .product_info .product_data > .buy_btn
+    .product_data .scroll > .buy_btn
     {
         font-size: 22px;
         line-height: 26px;
@@ -725,12 +737,12 @@
     }
 
 
-    .product_info .product_data > .gift
+    .product_data .scroll > .gift
     {
         margin-top: 16px;
     }
 
-    .product_info .product_data > .gift .btn
+    .product_data .scroll > .gift .btn
     {
         font-size: 15px;
         line-height: 21px;

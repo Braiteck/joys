@@ -525,9 +525,17 @@
     }
 
 
-    .product_info .product_data
+    .product_data
     {
         width: 100%;
+    }
+
+
+    .product_data .scroll
+    {
+        overflow: visible;
+
+        height: auto;
     }
 
 

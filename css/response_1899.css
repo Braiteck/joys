@@ -164,6 +164,14 @@
     }
 
 
+    .product_data .scroll
+    {
+        width: calc(100% + 60px);
+        margin-right: -60px;
+        padding-right: 60px;
+    }
+
+
 
     /*----------------------
         Related products

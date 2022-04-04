@@ -468,26 +468,26 @@
     }
 
 
-    .product_info .product_data > .category
+    .product_data .scroll > .category
     {
         font-size: 15px;
         line-height: 21px;
     }
 
-    .product_info .product_data > .product_name
+    .product_data .scroll > .product_name
     {
         font-size: 24px;
         line-height: 28px;
     }
 
-    .product_info .product_data > .price
+    .product_data .scroll > .price
     {
         font-size: 26px;
         line-height: 30px;
     }
 
 
-    .product_info .product_data > .features .size label
+    .product_data .scroll > .features .size label
     {
         font-size: 15px;
         line-height: 40px;
@@ -497,7 +497,7 @@
     }
 
 
-    .product_info .product_data > .buy_btn
+    .product_data .scroll > .buy_btn
     {
         font-size: 20px;
         line-height: 24px;

@@ -229,6 +229,9 @@ $(() => {
 	})
 
 
+	// Залипание блока
+	$('.sticky').stick_in_parent()
+
 
 	$('.overlay').click((e) => {
 		e.preventDefault()

@@ -452,17 +452,17 @@
     }
 
 
-    .product_info .product_data > .features .name
+    .product_data .scroll > .features .name
     {
         width: 84px;
     }
 
-    .product_info .product_data > .features .val
+    .product_data .scroll > .features .val
     {
         width: calc(100% - 84px);
     }
 
-    .product_info .product_data > .features .size label
+    .product_data .scroll > .features .size label
     {
         line-height: 39px;
 
@@ -471,28 +471,28 @@
     }
 
 
-    .product_info .product_data > .features .size
+    .product_data .scroll > .features .size
     {
         margin-bottom: -8px;
         margin-left: -8px;
     }
 
-    .product_info .product_data > .features .size label
+    .product_data .scroll > .features .size label
     {
         margin-bottom: 8px;
         margin-left: 8px;
     }
 
 
-    .product_info .product_data > .buy_btn
+    .product_data .scroll > .buy_btn
     {
         font-size: 18px;
         line-height: 22px;
     }
 
 
-    .product_info .product_data > .gift,
-    .product_info .product_data > .gift .btn
+    .product_data .scroll > .gift,
+    .product_data .scroll > .gift .btn
     {
         width: 100%;
 
