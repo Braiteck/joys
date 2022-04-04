@@ -27,63 +27,6 @@ $(() => {
 	}
 
 
-	// Карусель моделей
-	const modelsSliders = []
-
-	$('.models .swiper-container').each(function (i) {
-		$(this).addClass('models_s' + i)
-
-		let slides = $(this).find('.slide').length,
-			options = {
-				loop: false,
-				speed: 500,
-				simulateTouch: false,
-				allowTouchMove: true,
-				noSwiping: true,
-				spaceBetween: 20,
-				watchSlidesVisibility: true,
-				slideActiveClass: 'active',
-				slideVisibleClass: 'visible',
-				pagination: {
-					el: '.swiper-pagination',
-					type: 'bullets',
-					clickable: true,
-					bulletActiveClass: 'active'
-				},
-				navigation: {
-					nextEl: '.swiper-button-next',
-					prevEl: '.swiper-button-prev'
-				},
-				breakpoints: {
-					0: {
-						slidesPerView: 1
-					},
-					768: {
-						slidesPerView: 2
-					},
-					1024: {
-						slidesPerView: 3
-					},
-					1280: {
-						slidesPerView: 4
-					}
-				}
-			}
-
-		modelsSliders.push(new Swiper('.models_s' + i, options))
-
-		if (slides > modelsSliders[i].params.slidesPerView) {
-			options.loop = true
-			options.simulateTouch = true
-			options.allowTouchMove = true
-			options.noSwiping = false
-
-			modelsSliders[i].destroy(true, true)
-			modelsSliders[i] = new Swiper('.models_s' + i, options)
-		}
-	})
-
-
 	// Карусель товаров
 	const productsSliders = []
 
@@ -218,7 +161,15 @@ $(() => {
 
 			$('header .menu .sub_menu').removeClass('show')
 			$dropdown.addClass('show')
+
+			initModelsSlider($dropdown.find('#shop_tab1'))
 		}
+	})
+
+	$('header .menu .sub_menu .close_btn').click(function (e) {
+		e.preventDefault()
+
+		$('header .menu .sub_menu').removeClass('show')
 	})
 
 	// Закрываем Подменю при клике за её пределами
@@ -293,13 +244,13 @@ $(() => {
 $(window).on('resize', () => {
 	if (typeof WW !== 'undefined' && WW != $(window).width()) {
 		// Моб. версия
-		if (!fiestResize) {
+		if (!firstResize) {
 			$('meta[name=viewport]').attr('content', 'width=device-width, initial-scale=1, maximum-scale=1')
 			if ($(window).width() < 375) $('meta[name=viewport]').attr('content', 'width=375, user-scalable=no')
 
-			fiestResize = true
+			firstResize = true
 		} else {
-			fiestResize = false
+			firstResize = false
 		}
 
 
@@ -307,3 +258,63 @@ $(window).on('resize', () => {
 		WW = $(window).width()
 	}
 })
+
+
+
+function initModelsSlider(parent) {
+	// Карусель моделей
+	const modelsSliders = []
+
+	parent.find('.swiper-container').each(function (i) {
+		$(this).addClass('models_s' + i)
+
+		let slides = $(this).find('.slide').length,
+			options = {
+				loop: false,
+				speed: 500,
+				simulateTouch: false,
+				allowTouchMove: true,
+				noSwiping: true,
+				spaceBetween: 20,
+				watchSlidesVisibility: true,
+				slideActiveClass: 'active',
+				slideVisibleClass: 'visible',
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'bullets',
+					clickable: true,
+					bulletActiveClass: 'active'
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev'
+				},
+				breakpoints: {
+					0: {
+						slidesPerView: 1
+					},
+					768: {
+						slidesPerView: 2
+					},
+					1024: {
+						slidesPerView: 3
+					},
+					1280: {
+						slidesPerView: 4
+					}
+				}
+			}
+
+		modelsSliders.push(new Swiper('.models_s' + i, options))
+
+		if (slides > modelsSliders[i].params.slidesPerView) {
+			options.loop = true
+			options.simulateTouch = true
+			options.allowTouchMove = true
+			options.noSwiping = false
+
+			modelsSliders[i].destroy(true, true)
+			modelsSliders[i] = new Swiper('.models_s' + i, options)
+		}
+	})
+}

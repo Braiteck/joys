@@ -88,14 +88,8 @@ $(() => {
 	// Табы
 	var locationHash = window.location.hash
 
-	$('body').on('click', '.tabs button, .tabs .btn', function (e) {
-		if ($(this).hasClass('btn') && $(window).width() > 1023) {
-			e.preventDefault()
-		}
-
-		if (!$(this).hasClass('btn')) {
-			e.preventDefault()
-		}
+	$('body').on('click', '.tabs button', function (e) {
+		e.preventDefault()
 
 		if (!$(this).hasClass('active')) {
 			const $parent = $(this).closest('.tabs_container'),
@@ -103,11 +97,28 @@ $(() => {
 				$activeTabContent = $(activeTab),
 				level = $(this).data('level')
 
-			$parent.find('.tabs:first button, .tabs:first .btn').removeClass('active')
+			$parent.find('.tabs:first button').removeClass('active')
 			$parent.find('.tab_content.' + level).removeClass('active')
 
 			$(this).addClass('active')
 			$activeTabContent.addClass('active')
+		}
+	})
+
+	$('body').on('mouseenter', '.tabs .btn', function () {
+		if (!$(this).hasClass('active')) {
+			const $parent = $(this).closest('.tabs_container'),
+				activeTab = $(this).data('content'),
+				$activeTabContent = $(activeTab),
+				level = $(this).data('level')
+
+			$parent.find('.tabs:first .btn').removeClass('active')
+			$parent.find('.tab_content.' + level).removeClass('active')
+
+			$(this).addClass('active')
+			$activeTabContent.addClass('active')
+
+			initModelsSlider($activeTabContent)
 		}
 	})
 

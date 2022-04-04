@@ -1,4 +1,5 @@
-@media print, (max-width: 767px)
+@media print,
+(max-width: 767px)
 {
     /*-------------------
         Global styles
@@ -42,7 +43,8 @@
     /*------------
         Header
     ------------*/
-    header
+    header,
+    header.absolute
     {
         height: calc(100% - 68px);
     }

@@ -1,4 +1,5 @@
-@media print, (max-width: 1023px)
+@media print,
+(max-width: 1023px)
 {
     /*-------------------
         Global styles
@@ -30,8 +31,11 @@
     /*------------
         Header
     ------------*/
-    header
+    header,
+    header.absolute
     {
+        color: var(--text_color);
+
         position: fixed;
         z-index: 103;
         top: auto;
@@ -47,7 +51,7 @@
         transform: translateX(-100%);
 
         background: var(--bg);
-        box-shadow: 0 3px 6px rgba(0,0,0, .16);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
     }
 
     header.show
@@ -67,7 +71,7 @@
         min-height:         fill-available;
         padding: 24px 0;
 
-        scrollbar-color: rgba(0,0,0,.2) transparent;
+        scrollbar-color: rgba(0, 0, 0, .2) transparent;
         scrollbar-width: thin;
         justify-content: flex-start;
         align-items: flex-start;
@@ -87,7 +91,7 @@
     header .mob_scroll::-webkit-scrollbar-thumb
     {
         border-radius: 3px;
-        background-color: rgba(0,0,0,.2);
+        background-color: rgba(0, 0, 0, .2);
     }
 
     header .mob_scroll > *

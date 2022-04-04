@@ -1,4 +1,5 @@
-@media print, (max-width: 1899px)
+@media print,
+(max-width: 1899px)
 {
     /*-------------------
         Global styles
@@ -34,6 +35,12 @@
     header .menu .models .title
     {
         margin-bottom: 24px;
+    }
+
+
+    header .menu .sub_menu .bg
+    {
+        top: -32px;
     }
 
 

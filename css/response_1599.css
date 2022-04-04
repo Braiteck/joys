@@ -1,4 +1,5 @@
-@media print, (max-width: 1599px)
+@media print,
+(max-width: 1599px)
 {
     /*-------------------
         Global styles
