@@ -1883,6 +1883,7 @@ header.absolute .logo img
     max-height: 50%;
 
     content: '';
+    pointer-events: none;
 
     opacity: .1;
     background:    -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
@@ -1981,6 +1982,8 @@ header.absolute .logo img
     overflow: hidden;
 
     padding-bottom: 150%;
+
+    text-decoration: none;
 }
 
 .products .product .thumb img
